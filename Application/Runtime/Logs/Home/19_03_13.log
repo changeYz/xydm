@@ -1,0 +1,63 @@
+[ 2019-03-13T11:55:40+08:00 ] 120.204.17.72 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000184s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000122s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000159s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: imei /www/wwwroot/xsdm.taozhehui88/Application/Home/Controller/HomeController.class.php 第 32 行.
+NOTIC: [8] Undefined index: chapid /www/wwwroot/xsdm.taozhehui88/Application/Home/Controller/HomeController.class.php 第 42 行.
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/xsdm.taozhehui88/Application/Home/Controller/HomeController.class.php 第 63 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/xsdm.taozhehui88/Application/Home/Controller/HomeController.class.php 第 63 行.
+NOTIC: [8] Undefined index: user_id /www/wwwroot/xsdm.taozhehui88/Application/Home/Controller/HomeController.class.php 第 71 行.
+NOTIC: [8] Undefined index: parent /www/wwwroot/xsdm.taozhehui88/Application/Home/Controller/HomeController.class.php 第 132 行.
+NOTIC: [8] Undefined index: uloginid /www/wwwroot/xsdm.taozhehui88/Application/Home/Controller/HomeController.class.php 第 141 行.
+NOTIC: [8] Undefined index: zidongzhuce /www/wwwroot/xsdm.taozhehui88/Application/Home/Controller/HomeController.class.php 第 149 行.
+SQL: SHOW COLUMNS FROM `vv_data` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `vv_data` WHERE ( date=20190312 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `vv_order` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vv_order` WHERE `create_time` BETWEEN 1552320000 AND 1552406400 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `vv_order` WHERE `create_time` BETWEEN 1552320000 AND 1552406400 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `vv_user` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vv_user` WHERE ( sub_time between 1552320000 and 1552406400 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `vv_data` (`orders`,`total`,`subs`,`date`) VALUES ('0','0','1','20190312') [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: adsPic /www/wwwroot/xsdm.taozhehui88/Application/Home/Controller/HomeController.class.php 第 208 行.
+NOTIC: [8] Undefined index: uid /www/wwwroot/xsdm.taozhehui88/Application/Home/Controller/HomeController.class.php 第 209 行.
+NOTIC: [8] Undefined index: sort /www/wwwroot/xsdm.taozhehui88/Application/Home/Controller/MhController.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `vv_mh_list` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `vv_mh_list` WHERE `mhcate` LIKE '%5%' ORDER BY sort desc LIMIT 6   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: sort /www/wwwroot/xsdm.taozhehui88/Application/Home/Controller/MhController.class.php 第 23 行.
+SQL: SELECT * FROM `vv_mh_list` WHERE `mhcate` LIKE '%6%' ORDER BY sort desc LIMIT 6   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: sort /www/wwwroot/xsdm.taozhehui88/Application/Home/Controller/MhController.class.php 第 23 行.
+SQL: SELECT * FROM `vv_mh_list` WHERE `mhcate` LIKE '%7%' ORDER BY sort desc LIMIT 6   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: sort /www/wwwroot/xsdm.taozhehui88/Application/Home/Controller/MhController.class.php 第 23 行.
+SQL: SELECT * FROM `vv_mh_list` WHERE `mhcate` LIKE '%8%' ORDER BY sort desc LIMIT 6   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: sort /www/wwwroot/xsdm.taozhehui88/Application/Home/Controller/MhController.class.php 第 23 行.
+SQL: SELECT * FROM `vv_mh_list` WHERE `mhcate` LIKE '%9%' ORDER BY sort desc LIMIT 6   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: sort /www/wwwroot/xsdm.taozhehui88/Application/Home/Controller/MhController.class.php 第 23 行.
+SQL: SELECT * FROM `vv_mh_list` WHERE `mhcate` LIKE '%10%' ORDER BY sort desc LIMIT 6   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: sort /www/wwwroot/xsdm.taozhehui88/Application/Home/Controller/MhController.class.php 第 23 行.
+SQL: SELECT * FROM `vv_mh_list` WHERE `mhcate` LIKE '%11%' ORDER BY sort desc LIMIT 6   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: sort /www/wwwroot/xsdm.taozhehui88/Application/Home/Controller/MhController.class.php 第 23 行.
+SQL: SELECT * FROM `vv_mh_list` WHERE `mhcate` LIKE '%12%' ORDER BY sort desc LIMIT 6   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `vv_mh_list` WHERE `free_type` = 1 ORDER BY sort desc  [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 2 for Common\Util\ddwechat::setParam(), called in /www/wwwroot/xsdm.taozhehui88/Application/Home/Controller/MhController.class.php on line 32 and defined /www/wwwroot/xsdm.taozhehui88/Application/Common/Util/ddwechat.class.php 第 39 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+NOTIC: [8] Undefined variable: share /www/wwwroot/xsdm.taozhehui88/Application/Runtime/Cache/Home/67199abba7efdab949490dffef721944.php 第 203 行.
+NOTIC: [8] Undefined variable: share /www/wwwroot/xsdm.taozhehui88/Application/Runtime/Cache/Home/67199abba7efdab949490dffef721944.php 第 204 行.
+NOTIC: [8] Undefined variable: share /www/wwwroot/xsdm.taozhehui88/Application/Runtime/Cache/Home/67199abba7efdab949490dffef721944.php 第 205 行.
+NOTIC: [8] Undefined index: thirdcode /www/wwwroot/xsdm.taozhehui88/Application/Runtime/Cache/Home/67199abba7efdab949490dffef721944.php 第 252 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009359s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009401s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000113s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000141s ]
+

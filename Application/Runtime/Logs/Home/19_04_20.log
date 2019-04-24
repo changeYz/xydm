@@ -1,0 +1,9 @@
+[ 2019-04-20T16:14:00+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000669s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001121s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001180s ]
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'xsdm_taozhehui88.vv_config' doesn't exist
+
